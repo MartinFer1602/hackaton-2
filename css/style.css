@@ -1,0 +1,71 @@
+/* Reglas de reseteo */
+/* * {
+    margin: 0;
+} */
+.hero{
+    background-image: url("/img/hero.jpg");
+    background-position: center;
+    /* cubre todo el ancho y alto de la imagen */
+    background-size: cover;
+    /* con "vh" se recorta al tamaño responsive */
+    /* height: 70vw; */
+    /* ---------------------- */
+    /* primer valor (minimo valor) el de medio 
+    es lo general, ultimo valor (maximo valor) */
+    height: clamp(200px, 80vw, 80vh);
+    position: relative;
+}
+
+.hero-title{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    /* tamaño de la letra */
+    font-size: 36px;
+    /* empuja desde la derecha */
+    margin-right: 20px;
+}
+
+.hero-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 20px;
+    /* fondo del texto */
+    background-color:#729afe7e ;
+    /* extender el fondo */
+    padding: 10px;
+    color: white;
+    margin-left: 20px;
+}
+
+.sobremi {
+    background-color: #7299fe;
+    height: clamp(200px, 100 vw, 100vh)
+}
+
+.sobremi-titulo{
+    color: #1D06A7;
+    text-align: center;
+}
+
+/* Para el elemento <progress> */
+progress {
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 10em;
+    background: rgb(217,217,217);
+}
+
+progress::-webkit-progress-value{
+    border-radius: 10em;
+    background: purple;
+}
+
+.imagenesb4 img {
+    width: 100px; 
+
+}
