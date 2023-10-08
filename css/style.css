@@ -1,7 +1,12 @@
 /* Reglas de reseteo */
-/* * {
-    margin: 0;
+/* html{
+    overflow-x: hidden;
+    width: 100vw;
 } */
+/* --------------- */
+ * {
+    margin: 0;
+} 
 .hero{
     background-image: url("/img/hero.jpg");
     background-position: center;
@@ -42,12 +47,15 @@
 
 .sobremi {
     background-color: #7299fe;
-    height: clamp(200px, 100 vw, 100vh)
+    height: clamp(200px, 100vh);   
 }
 
 .sobremi-titulo{
     color: #1D06A7;
     text-align: center;
+}
+.sobremi-parrafo{
+    color: white;
 }
 
 /* Para el elemento <progress> */
@@ -62,10 +70,75 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value{
     border-radius: 10em;
-    background: purple;
+    background: #57EFF9;
 }
 
-.imagenesb4 img {
-    width: 100px; 
+.skills {
+    background-color: #9022FF;
+    /* Width: 960px;
+    Height: 424px;
+    Top: 949px; */
+}
+.skills-title {
+    color: #26CC4B;
+    text-align: center;
+}
 
+.wrapper-mis-skills {
+    /* forma de grilla */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;;
+}
+
+.wrapper-mis-skills section {
+    margin-bottom: 20px;
+}
+.portafolio {
+    background-color: #FFD233;
+}
+
+.portafolio img {
+    width: 80%; 
+    margin-bottom: 30px;
+}
+.portafolio-title{
+    color: #00AD84;
+    text-align: center;
+}
+
+.wrapper-portafolio section {
+    margin-bottom: 20px;
+}
+.wrapper-portafolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.clientes {
+    background-color: #3F4E62;
+}
+.clientes-title{
+    color: #ADFF28;
+    text-align: center;
+}
+.clientes img {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.wrapper-clientes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+
+}
+
+.contacto {
+    background-color: #1687A0;
+}
+.contacto-title {
+    color: #FF1B1B;
+    text-align: center;
 }
